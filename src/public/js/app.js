@@ -15,11 +15,6 @@ socket.addEventListener("close", () => {
   console.log("DisConnected to Server ❌");
 });
 
-function handleMessage(message) {
-  messageList.appendChild("li");
-  messageList.querySelector("li").innerText = message.data;
-}
-
 messageForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = messageForm.querySelector("input");
